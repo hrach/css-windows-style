@@ -1,0 +1,32 @@
+.ui-button {
+	border-color: #707070;
+	font-size: 14px;
+	padding: 0 7px 1px;
+	user-select: none;
+}
+
+a.ui-button {
+	padding: 0 9px 1px;
+}
+
+.ui-button.ui-state-focus {
+	border-color: #3c7fb1;
+	box-shadow: inset 0px 0px 0px 1px rgb(72, 216, 251);
+	outline: none;
+}
+
+/* just to preserve overriding by .ui-button.ui-state-focus */
+.ui-button.ui-state-pressed {
+	box-shadow:
+		 inset 0px 1px 0px 0px rgba(0, 0, 0, 0.3),
+		 inset 1px 0px 0px 0px rgba(0, 0, 0, 0.3),
+		 inset -1px 0px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+.ui-button.ui-state-pressed {
+	padding: 0 6px 1px 8px;
+}
+
+a.ui-button.ui-state-pressed {
+	padding: 0 9px 1px 10px;
+}

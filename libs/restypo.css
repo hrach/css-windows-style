@@ -1,0 +1,250 @@
+/**
+ * CSS typoghraphical reset
+ * Some styling (form fields) based on formalize - http://github.com/nathansmith/formalize
+ * Clearfix based on http://nicolasgallagher.com/micro-clearfix-hack/
+ *
+ * @name         Restypo
+ * @version      1.2
+ * @link         http://github.com/hrach/restypo
+ * @author       Jan Skrasek
+ * @link         http://jan.skrasek.com
+ * @license      MIT License
+ */
+/* >>>> RESET <<<< */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+img{border:0;}
+address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+th,td{vertical-align:top;font-weight:normal;text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;}
+/* >>>> DEFAULT STYLING <<<< */
+html{
+	font-size:100.01%;
+	min-height:100%;
+}
+body{
+	font-family:Calibri, sans-serif;
+	font-size:15px;
+	line-height:1.4em;
+	color:#333;
+	background:#fff;
+	padding:30px;
+}
+p,table,pre,fieldset,address{
+	margin-bottom:20px;
+}
+pre{
+	border:1px solid #eee;
+	font-family: Consolas, 'Lucida Console', 'Monaco CE', fixed, monospace;
+	overflow: auto;
+	white-space: pre;
+}
+pre code{
+	display:block;
+	padding:4px;
+}
+h1,h2,h3,h4,h5,h6{
+	line-height:1em;
+	color:#000;
+	clear:both;
+}
+h1{
+	font-size:32px;
+	margin-top:30px;
+	margin-bottom:10px;
+}
+h2{
+	font-size:24px;
+	margin-top:30px;
+	margin-bottom:10px;
+}
+h3{
+	font-size:22px;
+	margin-top:15px;
+	margin-bottom:5px;
+}
+h4{
+	font-size:20px;
+	font-variant:small-caps;
+}
+h5{
+	font-size:16px;
+	font-variant:small-caps;
+}
+h6{
+	font-size:14px;
+	font-variant:small-caps;
+}
+a{
+	color:#00268f;
+}
+a:hover{
+	text-decoration:none;
+}
+hr{
+	background:#ddd;
+	border:none;
+	clear:both;
+	color:#fff;
+	height:1px;
+	margin:18px 0;
+}
+td,th{
+	padding:4px;
+}
+address{
+	font-style:italic;
+}
+blockquote{
+	font-size:17px;
+	color:#666;
+	text-indent:-7px;
+	margin:15px 0;
+	padding:15px 10px 15px 35px;
+	border-top:1px solid #bbb;
+	border-bottom:1px solid #bbb;
+}
+blockquote p:last-child{
+	margin-bottom: 0;
+}
+cite{
+	font-style:italic;
+}
+blockquote p:before{
+	content:'\201E';
+	font-weight:bold;
+}
+blockquote p:after{
+	content:'\201C';
+	font-weight:bold;
+}
+cite:before{
+	font-weight:bold;
+	content:'\201A';
+}
+cite:after{
+	font-weight:bold;
+	content:'\2018';
+}
+abbr,acronym{
+	border-bottom:1px dotted #555;
+	cursor:help;
+}
+ul,ol{
+	margin-left:40px;
+	margin-bottom:18px;
+}
+ul{
+	list-style-type:disc;
+}
+ul ul{
+	list-style-type:circle;
+}
+ul ul ul{
+	list-style-type:square;
+}
+li > ul, li > ol{
+	margin-bottom:0;
+}
+ol{
+	list-style:decimal;
+}
+table ul,table ol{
+	margin-bottom:0;
+	margin-left:23px;
+}
+dl dt{
+	font-style:italic;
+	font-weight:bold;
+	margin:5px 0 0 0;
+}
+dl dd{
+	margin:0 0 5px 25px;
+}
+iframe{
+	border:1px solid #eee;
+}
+fieldset table{
+	margin-bottom:0;
+}
+input:invalid {
+	box-shadow:0px 0px 3px 1px #f63232;
+}
+::-webkit-input-placeholder {
+	color: #777;
+}
+::-moz-focus-inner {
+	border: 0;
+}
+input[type=search]::-webkit-search-decoration {
+	display: none;
+}
+/* >>>> CLASS STYLING <<<< */
+.clear{
+	clear:both;
+}
+.clearfix:before,.clearfix:after{
+	content:"";
+	display:table;
+}
+.clearfix:after{
+	clear:both;
+}
+.clearfix{
+	zoom:1;
+}
+.left,.figure-left{
+	float:left;
+}
+.right,.figure-right{
+	float:right;
+}
+img.left,.figure-left img{
+	padding:4px;
+	border:1px solid #ccc;
+	margin-bottom:18px;
+	margin-right:20px;
+	margin-top:3px;
+}
+img.right,.figure-right img{
+	padding:4px;
+	border:1px solid #ccc;
+	margin-bottom:18px;
+	margin-left:20px;
+	margin-top:3px;
+}
+.figure-left img,.figure-right img,.figure img{
+	margin-bottom:0;
+}
+.figure-left a,.figure-right a,.figure a{
+	padding-right:0;
+	background:none;
+}
+.figure-left p,.figure-right p,.figure p{
+	padding:5px 0;
+	font-style:italic;
+}
+.figure-right p{ margin-left:20px;}
+.figure-left p{ margin-right:20px;}
+table.bordered{
+	border:1px solid #ccc;
+}
+table.bordered td,table.bordered th{
+	border:1px solid #ccc;
+	padding:6px;
+}
+table.bordered th{
+	background:#eee;
+}
+table.bordered tfoot td,table.bordered tfoot th{
+	background:#F5F5F5;
+}
+ul.no-margin,ol.no-margin{
+	margin:0;
+	list-style-type:none;
+	list-style-image:none;
+}

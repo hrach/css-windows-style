@@ -1,0 +1,36 @@
+body {
+	background: #f0f0f0;
+}
+
+.ui-state-default, .ui-state-default a {
+	font-family: 'Segoe UI', 'Trebuchet MS', 'Geneva CE', lucida, sans-serif;
+	font-size: 12px;
+	color: #000;
+	cursor: default;
+	text-decoration: none;
+}
+
+.ui-state-default {
+	background: linear-gradient(top, rgb(242,242,242) 0%, rgb(235,235,235) 50%, rgb(221,221,221) 50%, rgb(207,207,207) 100%);
+	border: 1px solid #898c95;
+	box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.9);
+}
+
+.ui-state-hover, .ui-state-active {
+	border-color: #3c7fb1;
+	background: linear-gradient(top, rgb(234,246,253) 0%, rgb(217,240,252) 50%, rgb(190,230,253) 50%, rgb(167,217,245) 100%);
+	box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.9);
+}
+
+.ui-state-pressed {
+	border-color: #2c628b;
+	background: linear-gradient(top, rgb(234,246,253) 0%, rgb(196,229,246) 50%, rgb(151,209,239) 50%, rgb(104,179,219) 100%);
+	box-shadow:
+		 inset 0px 1px 0px 0px rgba(0, 0, 0, 0.3),
+		 inset 1px 0px 0px 0px rgba(0, 0, 0, 0.3),
+		 inset -1px 0px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+.ui-corner-all {
+	border-radius: 2px;
+}

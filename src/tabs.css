@@ -1,0 +1,45 @@
+.ui-tabs-nav {
+	height: 24px; margin: 0 0 0 4px;
+}
+
+.ui-tabs-nav li {
+	list-style-type: none; margin: 0; float: left;
+	border-bottom: 0;
+	height: 20px;
+	margin-top: 3px;
+	box-shadow:
+		 inset 0px 1px 0px 0px rgba(255, 255, 255, 0.5),
+		 inset 1px 0px 0px 0px rgba(255, 255, 255, 0.5),
+		 inset -1px 0px 0px 0px rgba(255, 255, 255, 0.5);
+
+}
+
+.ui-tabs-nav li a {
+	line-height: 20px;
+	display: block;
+	padding: 0 10px;
+	vertical-align: middle;
+}
+
+.ui-tabs-nav li.ui-tabs-selected {
+	background: #fff;
+	border-color: #898c95;
+	height: 24px;
+	margin: 0 -4px;
+	position: relative;
+}
+
+.ui-tabs-nav li.ui-tabs-selected a {
+	padding: 0 8px;
+	line-height: 23px;
+}
+
+.ui-tabs-hide {
+	display: none;
+}
+
+.ui-tabs-panel {
+	background: #fff;
+	border: 1px solid #898c95;
+	padding: 15px;
+}
